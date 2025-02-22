@@ -24,9 +24,10 @@
         </div>
         <div class="bottom-text">
             <h2>Motivate about what?</h2>
+            <p style="color: #dce1e6; font-size: medium; font-style: italic;">type what is coming يا فتاه</p>
           <input type="text" class="input" id="myInput">
           <p><a href="#" id="liveAlertBtn2">HERE when you finish?</a></p>
-          <div id="liveAlertPlaceholder2" style="color: #f1b7b7; font-size: medium;"></div>
+          <div id="liveAlertPlaceholder2" style="color: #f3efef; font-size: large;"></div>
         </div>
       </form>
     </div>
@@ -310,8 +311,16 @@
 </style>
 
 <script>
-
 const alertPlaceholder2 = document.getElementById('liveAlertPlaceholder2');
+
+const messages = [
+    "ana 3arf any f al a8lb msh mwgod dlw2t bs ana b2mna wask w mot2kd mn ank a4tr w a7la doctor w msh bs ht3de al doonya nty ht3deha 7lw awy awy awy zy kol mara i trust you in every step you will did great in ",
+    "7ata lw dh yban ano klam mtkrr (7sb 3dd al mrat aly htst5dmyh fyha) bs hwa klamy w ana aly katpo y3ny 7ta lw ana msh 3arf anty f eh dlw2t amt7an aw research aw interview aw 7agat mn bta3tk bs ayn kan i will support you f ay 7aga mn abl 7ata m3rf eh hya 34an 3arf ank mfesh mara nty m3mltesh aly 3liki end of text l7d ma arg3 rbna m3aki f ",
+    "fakrrk y3ny 7ta lw msh mwgod msh h3ml 7saby haha &#128527; hwa bs lw kan fyh w2t kont 3mltlk app b klamy bs ll2sf atzn2t w dh asr3 7aga gt f dma8i f 7sl 5er kolha ayam w htl2eny f wshk tany ana sr7t kl3ada lmo25za al mohm ano ana 3arf ank 3rfa mo3zm al klam dh w ano msh 7aga gdeda 3liki bs b2mna ayn kan aly ht3mlyh ana f5or biki ldrga you can't imagine so goo kill that ",
+    "Mabye you think you did't do enough bs trust god and my pray for you, Great things will happen in",
+    "sly 3la al nby hal nty 3daty kol dh 7arfen nty 3daty aly m7d4 3rf ywsl l noso 34an t5afe mn dh ??? mivel nty mfesh mara btlty tbhreny b maghodk aw shtartk aw 7ta gnank wlhy mobhr hwa kman (msh mwgod 34an tt5n2e m3aya ba2a &#129299; &#128514;) be like every time you did it ht3deha w t5rby al ",
+    "bose ysty homa msh msgs kter 34an aked al klam lma bykon w ana f al mwkf byfr2 bs hawa ashtr doctor w bnt f al donya mstnya tshge3 dyh btd5ol al meeting al dctra hya aly bt5rog 5yfa mnha you be the best for ever ro7y tl3e 3en om al "
+];
 
 const appendAlert2 = (message) => {
     const wrapper = document.createElement('div');
@@ -329,12 +338,14 @@ if (alertTrigger2) {
     alertTrigger2.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default link behavior
         const inputValue = inputElement.value.trim();
-        
+
         if (inputValue) {
-            appendAlert2(` ${inputValue}`);
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            appendAlert2(`${randomMessage} ${inputValue} &#129392; &#127872; &#128079; , Please gooooo tell my every time what is happend ana msh 3amlo y3ml save 34an tktby bra7tk mn 8er ma al site yo2f (hyst5dm storage w yo2f 3nd limit lw 3mlt kda )`);
         } else {
             appendAlert2('Please enter a value before clicking.');
         }
     });
 }
+
 </script>
