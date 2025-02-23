@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <!-- start  Login Form -->
+    <div class="log-form ">
+        <div class="login-container" style="padding-top: 100px;">
+            <form class="login-form">
+                <!-- From Uiverse.io by G4b413l -->
+                <div class="bar">
+                    <div class="ball"></div>
+                </div>
+                <div class="bottom-text">
+                    <h2>CHEERS for? </h2>
+                    <p style="color: #dce1e6; font-size: medium; font-style: italic;">هيا للاحتفال حتي لو خطوات نونه</p>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <input type="text" class="input" id="myInput">
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <p><a href="#" onclick="showFireworks()" id="liveAlertBtn2">HERE when you finish?</a></p>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div id="liveAlertPlaceholder2" style="color: #f3efef; font-size: large;"></div>
+                    <audio id="myAudio" src="/all/videoplayback.m4a"></audio>
+                    <button type="button" onclick="playSound()" style="margin-top: 15px;"><a href="#" style="text-decoration:none; color: #ffffff;">More fun sika?</a></button>
+                    <button type="button" style="margin-top: 15px;"><a href="/all/serv" style="text-decoration:none; color: #ffffff;">when you being done here just a question</a></button>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                    <div class="firework"></div>
+                </div>
+            </form>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+        </div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <!-- end login form -->
+    <!-- start footer -->
+    <footer >
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <!-- this class just to fit  the content in container -->
+    </footer>
+    <!-- end  footer -->
+</body>
+<!-- From Uiverse.io by Nawsome -->
+
+</html>
+<style>
+    /* From Uiverse.io by Pradeepsaranbishnoi */
+    /* From Uiverse.io by G4b413l */
+    .ball {
+        position: relative;
+        bottom: 50px;
+        left: calc(100% - 20px);
+        width: 50px;
+        height: 50px;
+        background: #ff0000;
+        border-radius: 50%;
+        animation: ball-move8234 3s ease-in-out 1s infinite alternate;
+    }
+
+    .ball::after {
+        position: absolute;
+        content: '';
+        top: 25px;
+        right: 5px;
+        width: 5px;
+        height: 5px;
+        background: #000;
+        border-radius: 50%;
+    }
+
+    .bar {
+        margin: auto;
+        width: 200px;
+        height: 12.5px;
+        background: #FFDAAF;
+        border-radius: 30px;
+        transform: rotate(-15deg);
+        animation: up-down6123 3s ease-in-out 1s infinite alternate;
+    }
+
+    @keyframes up-down6123 {
+        from {
+            transform: rotate(-15deg);
+        }
+
+        to {
+            transform: rotate(15deg);
+        }
+    }
+
+    @keyframes ball-move8234 {
+        from {
+            left: calc(100% - 40px);
+            transform: rotate(360deg);
+        }
+
+        to {
+            left: calc(0% - 20px);
+            transform: rotate(0deg);
+        }
+    }
+
+    /* color palatte */
+    :root {
+        --blue-color: #1e1ea8;
+        --back-grou: #ffffffa1;
+        --drak-blue: #383f52;
+        --hover-color: #426996;
+    }
+
+    /* start navbar */
+    .log-form {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        background-color: var(--back-grou);
+    }
+
+    /* end navbar */
+    /* start login form */
+    .login-container {
+        background-color: #2f2f2f;
+        border-radius: 18px;
+        box-shadow: rgb(31 31 31 / 17%) 0px -23px 25px 0px inset,
+            rgb(108 108 108 / 23%) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        padding: 40px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        margin: 0% auto;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .paragraph {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    input {
+        background: none;
+        border: 1px solid #f1f0f0;
+        padding: 15px 23px;
+        font-size: 16px;
+        border-radius: 8px;
+        color: #dce1e6;
+        width: 100%;
+        box-shadow: rgb(136 136 136 / 17%) 0px -23px 25px 0px inset,
+            rgb(81 81 81 / 23%) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    input:focus {
+        border-color: #0173ed;
+        outline: none;
+    }
+
+    button {
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #0173ed;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0173ed;
+    }
+
+    .bottom-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .bottom-text a {
+        color: #0173ed;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .bottom-text a:hover {
+        color: #3f95f2;
+    }
+
+    /* end login form */
+    .firework {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.8);
+        opacity: 0;
+        /* Initially hidden */
+        animation: both;
+    }
+
+    .firework.active {
+        opacity: 9;
+        /* Show when active */
+        animation: fireworkExplode 1s ease-out infinite;
+    }
+
+
+    .firework:nth-child(1) {
+        left: 30%;
+        top: 20%;
+        background: #e71502;
+        animation-delay: 0.5s;
+    }
+
+    .firework:nth-child(2) {
+        left: 70%;
+        top: 30%;
+        background: #b8d8ba;
+        animation-delay: 0.5s;
+    }
+
+    .firework:nth-child(3) {
+        left: 50%;
+        top: 70%;
+        background: #ffd700;
+        animation-delay: 1s;
+    }
+
+    .firework:nth-child(4) {
+        left: 20%;
+        top: 60%;
+        background: #e77038;
+        animation-delay: 1.5s;
+    }
+
+    .firework:nth-child(5) {
+        left: 80%;
+        top: 40%;
+        background: #e91e63;
+        animation-delay: 2s;
+    }
+
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 10px #ff0066, 0 0 20px #ff3399, 0 0 30px #ff66cc;
+        }
+
+        100% {
+            text-shadow: 0 0 20px #ff3399, 0 0 30px #ff66cc, 0 0 40px #ff99ff;
+        }
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fireworkExplode {
+        0% {
+            transform: scale(0.5) translateY(0);
+            opacity: 0;
+        }
+
+        50% {
+            transform: scale(1) translateY(-50px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(0.5) translateY(-100px);
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    const alertPlaceholder2 = document.getElementById('liveAlertPlaceholder2');
+
+    const messages = [
+        "ana 3arf any f al a8lb msh mwgod dlw2t bs ana b2mna wask w mot2kd mn ank a4tr w a7la doctor w msh bs ht3de al doonya nty ht3deha 7lw awy awy awy zy kol mara i trust you in every step you will did great in ",
+        "7ata lw dh yban ano klam mtkrr (7sb 3dd al mrat aly htst5dmyh fyha) bs hwa klamy w ana aly katpo y3ny 7ta lw ana msh 3arf anty f eh dlw2t amt7an aw research aw interview aw 7agat mn bta3tk bs ayn kan i will support you f ay 7aga mn abl 7ata m3rf eh hya 34an 3arf ank mfesh mara nty m3mltesh aly 3liki end of text l7d ma arg3 rbna m3aki f ",
+        "fakrrk y3ny 7ta lw msh mwgod msh h3ml 7saby haha &#128527; hwa bs lw kan fyh w2t kont 3mltlk app b klamy bs ll2sf atzn2t w dh asr3 7aga gt f dma8i f 7sl 5er kolha ayam w htl2eny f wshk tany ana sr7t kl3ada lmo25za al mohm ano ana 3arf ank 3rfa mo3zm al klam dh w ano msh 7aga gdeda 3liki bs b2mna ayn kan aly ht3mlyh ana f5or biki ldrga you can't imagine so goo kill that ",
+        "Mabye you think you did't do enough bs trust god and my pray for you, Great things will happen in",
+        "sly 3la al nby hal nty 3daty kol dh 7arfen nty 3daty aly m7d4 3rf ywsl l noso 34an t5afe mn dh ??? mivel nty mfesh mara btlty tbhreny b maghodk aw shtartk aw 7ta gnank wlhy mobhr hwa kman (msh mwgod 34an tt5n2e m3aya ba2a &#129299; &#128514;) be like every time you did it ht3deha w t5rby al ",
+        "bose ysty homa msh msgs kter 34an aked al klam lma bykon w ana f al mwkf byfr2 bs hawa ashtr doctor w bnt f al donya mstnya tshge3 dyh btd5ol al meeting al dctra hya aly bt5rog 5yfa mnha you be the best for ever ro7y tl3e 3en om al "
+    ];
+
+    const appendAlert2 = (message) => {
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = `<div class="alert alert-warning alert-dismissible" role="alert">
+                            <div>${message}</div>
+                        </div>`;
+        alertPlaceholder2.innerHTML = ''; // Clear previous alerts
+        alertPlaceholder2.append(wrapper);
+    };
+
+    const alertTrigger2 = document.getElementById('liveAlertBtn2');
+    const inputElement = document.getElementById('myInput');
+
+    if (alertTrigger2) {
+        alertTrigger2.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            const inputValue = inputElement.value.trim();
+
+            if (inputValue) {
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                appendAlert2(`${randomMessage} ${inputValue} &#129392; &#127872; &#128079; , Please gooooo tell my every time what is happend ana msh 3amlo y3ml save 34an tktby bra7tk mn 8er ma al site yo2f (hyst5dm storage w yo2f 3nd limit lw 3mlt kda )`);
+            } else {
+                appendAlert2('Please enter a value before clicking.');
+            }
+        });
+    }
+
+</script>
+<script>
+function playSound() {
+    const audio = document.getElementById("myAudio");
+    audio.volume = 1.0; 
+    audio.play().catch(error => console.error("Error playing audio:", error));
+}
+
+    function showFireworks() {
+        event.preventDefault(); // Prevent the default link behavior
+
+        // Select all fireworks elements
+        const fireworks = document.querySelectorAll('.firework');
+
+        // Loop through each firework and activate it
+        fireworks.forEach(firework => {
+            firework.classList.add('active'); // Add an active class
+        });
+
+
+    }
+
+</script>
