@@ -49,7 +49,10 @@
                     <div class="firework"></div>
                     <div class="firework"></div>
                     <div id="liveAlertPlaceholder2" style="color: #f3efef; font-size: large;"></div>
-                    <audio id="myAudio" src="/all/videoplayback.m4a"></audio>
+                    <audio id="myAudio" src="/all/videoplayback.m4a">
+                        <source src="/all/videoplayback.mp3" type="audio/mpeg">
+                            <source src="/all/videoplayback.m4a" type="audio/mp4">
+                    </audio>
                     <!-- From Uiverse.io by harsh_8704 --> 
                     <div class="button-wrapper">
                         <button class="spiderverse-button" onclick="playSound()">
@@ -643,9 +646,12 @@
 </script>
 <script>
 function playSound() {
-    const audio = document.getElementById("myAudio");
-    audio.volume = 1.0; 
-    audio.play().catch(error => console.error("Error playing audio:", error));
+    var audio = document.getElementById("myAudio");
+    if (audio) {
+        audio.play().catch(error => console.error("Audio play failed:", error));
+    } else {
+        console.error("Audio element not found");
+    }
 }
 
     function showFireworks() {
