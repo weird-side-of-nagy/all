@@ -49,13 +49,10 @@
                     <div class="firework"></div>
                     <div class="firework"></div>
                     <div id="liveAlertPlaceholder2" style="color: #f3efef; font-size: large;"></div>
-                    <audio id="myAudio" src="/all/videoplayback.m4a">
-                        <source src="/all/videoplayback.mp3" type="audio/mpeg">
-                            <source src="/all/videoplayback.m4a" type="audio/mp4">
-                    </audio>
+                    <audio id="myAudio" src="/all/videoplayback.m4a"></audio>
                     <!-- From Uiverse.io by harsh_8704 --> 
                     <div class="button-wrapper">
-                        <button class="spiderverse-button" onclick="playSound()">
+                        <button class="spiderverse-button" onclick="playSound(event)">
                             More fun?
                         <div class="glitch-layers">
                             <div class="glitch-layer layer-1">More fun sika?</div>
@@ -645,15 +642,12 @@
 
 </script>
 <script>
-function playSound() {
-    var audio = document.getElementById("myAudio");
-    if (audio) {
-        audio.play().catch(error => console.error("Audio play failed:", error));
-    } else {
-        console.error("Audio element not found");
-    }
-}
-
+       function playSound(event) {
+            event.preventDefault();
+            const audio = document.getElementById("myAudio");
+            audio.volume = 1.0;
+            audio.play().catch(error => console.error("Error playing audio:", error));
+        }
     function showFireworks() {
         event.preventDefault(); // Prevent the default link behavior
 
